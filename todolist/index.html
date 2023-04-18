@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todolist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- Header -->
+    <header>
+      <div class="download-edit-wrap">
+        <input type="button" value="저장" id="imgbtn">
+        <input type="button" value="수정" id="seting">
+        <input type="button" value="확인" id="okay" style="display: none;">
+      </div>
+      <div class="date-memo-wrap">
+        <div class="dateWrap">
+          <p class="font-1 font-date-mr">DATE</p>
+        </div>
+        <div class="memoWrap">
+          <p class="font-1">MEMO</p>
+          <span class="memo-text">◀ ❚❚ ▶ 00:00 ----⦁----------- 03:21</span>
+          <input type="text" class="memo-text-input" value="◀ ❚❚ ▶ 00:00 ----⦁----------- 03:21" style="display: none;">
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <main role="main">
+      <div class="todolist-table">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2" class="font-1">TO DO LIST</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist">javaScript 학습하기</span>
+                <input type="text" value="javaScript 학습하기" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist">TypeScript 학습하기</span>
+                <input type="text" value="TypeScript 학습하기" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist">NodeJS 학습하기</span>
+                <input type="text" value="NodeJS 학습하기" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist">NextJS 학습하기</span>
+                <input type="text" value="NextJS 학습하기" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox-border"><input type="checkbox"></td>
+              <td>
+                <span class="todolist-newlist"></span>
+                <input type="text" value="" class="todolist-text" style="display: none;">
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="time-table">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="6" class="font-1">TIME TABLE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>5</p>
+              </td>
+              <td class="checked"><input type="checkbox"></td>
+              <td class="checked"><input type="checkbox"></td>
+              <td class="checked"><input type="checkbox"></td>
+              <td class="checked"><input type="checkbox"></td>
+              <td class="checked"><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>6</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>7</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>8</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>9</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>10</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>11</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>12</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>13</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>14</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>15</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>16</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>17</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>18</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>19</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>20</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>21</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>22</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>23</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <p>24</p>
+              </td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer>
+      <P>&copy; 2023. 04. 18.</P>
+    </footer>
+    <!-- /Footer -->
+  </div>
+  <a id="target" style="display: none"></a>
+</body>
+
+</html>

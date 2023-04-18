@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'omyu_diary';
+  src: url(./font/omyu_diary.ttf);
+  font-style: normal;
+}
+
+body {
+  font-family: 'omyu_diary';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.font-1 {
+  font-family: 'Amaranth';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+}
